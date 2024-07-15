@@ -1,57 +1,84 @@
-import { HERO_CONTENT } from '../constants'
-import profilePic from '../assets/Akhil.jpg'
-import {motion} from "framer-motion"
+import "./Hero.scss";
+import Akhil from '../assets/Akhil.jpg'
+import { motion } from "framer-motion";
 
-const container = (delay) => ({
-    hidden: { x:-100, opacity: 0},
-    visible: {
-        x: 0,
-        opacity: 1,
-        transition: { duration: 0.5, delay: delay}
-    }
-})
+const textVariants = {
+  initial: {
+    x: -500,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+  scrollButton: {
+    opacity: 0,
+    y: 10,
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+    },
+  },
+};
+const sliderVariants = {
+  initial: {
+    x: 0,
+  },
+  animate: {
+    x: "-220%",
+    transition: {
+      repeat: Infinity,
+      repeatType:"mirror",
+      duration: 20,
+    },
+  },
+};
 
 const Hero = () => {
-    return (
-        <div className="border-b border-neutral-900 pb-4 lg:mb-35">
-            <div className="flex flex-wrap">
-                <div className="w-full lg:w-1/2">
-                    <div className="flex flex-col items-center lg:items-start">
-                        <motion.h1 
-                        variants={container(0)}
-                        initial="hidden"
-                        animate="visible"
+  return (
+    <div className="hero">
+      <div className="wrapper">
+        <motion.div
+          className="textContainer"
+          variants={textVariants}
+          initial="initial"
+          animate="animate"
+        >
+          <motion.h2 variants={textVariants}>AKHIL JOSE</motion.h2>
+          <motion.h2 variants={textVariants}>
+            Software Engineer
+          </motion.h2>
+          <motion.div variants={textVariants} className="buttons">
+            <motion.button variants={textVariants}>
+              See the Latest Works
+            </motion.button>
+            <motion.button variants={textVariants}>Contact Me</motion.button>
+          </motion.div>
+          <motion.img
+            variants={textVariants}
+            animate="scrollButton"
+            src=""
+            alt=""
+          />
+        </motion.div>
+      </div>
+      <motion.div
+        className="slidingTextContainer"
+        variants={sliderVariants}
+        initial="initial"
+        animate="animate"
+      >
+        Software Engineer
+      </motion.div>
+      <div className="imageContainer">
+        <img src={Akhil} alt="" />
+      </div>
+    </div>
+  );
+};
 
-                        className="pb-16 text-6xl font-thin tracking-tight lg:mt-6 lg:text-8xl">Akhil Jose</motion.h1>
-                        <motion.span 
-                        variants={container(0.5)}
-                        initial="hidden"
-                        animate="visible"
-
-                        className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"> Software Engineer</motion.span>
-                        
-                        {/* <motion.p
-                        variants={container(1)}
-                        initial="hidden"
-                        animate="visible"
-                        className='my-2 max-w-xl py-6  tracking-tighter'>
-                            {HERO_CONTENT}
-                        </motion.p> */}
-
-                    </div>
-                </div>
-                <div className='w-full lg:w-1/2 lg:p-8'>
-                    <div className='flex justify-center'>
-                        <motion.img 
-                        initial={{ x: 100, opacity: 0}}
-                        animate={{x:0, opacity: 1}}
-                        transition={{duration:1 , delay:1.2}}
-                        style={{width:"350px", height:"440px"}} src={profilePic} alt="profile_pic" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
-}
-
-export default Hero
+export default Hero;
