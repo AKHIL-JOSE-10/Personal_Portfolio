@@ -75,7 +75,7 @@ const Hero = () => {
         Software Engineer
       </motion.div>
       <div className="imageContainer">
-        <img style={{borderRadius:'50px'}} src={Akhil} alt="" />
+        <img style={{borderRadius:'40px'}} src={Akhil} alt="" />
       </div>
     </div>
   );
