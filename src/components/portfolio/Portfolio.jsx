@@ -13,10 +13,10 @@ const items = [
   },
   {
     id: 2,
-    title: "Jyothi Bus MAnagement System",
+    title: "Jyothi Bus Management System",
     img: bus,
     desc: "Worked collaboratively to develop a Bus Management System for our college, enhancing transportation logistics and efficiency. The system comprises three panels: one for students and staff to view bus info ,booking and make payments, another for bus coordinators to manage real-time bus tracking and logistics, and a third for college administrators to oversee operations and maintenance. This project significantly improved the efficiency of our college's transportation services.",
-    link: ""
+    link: "https://github.com/AKHIL-JOSE-10/College_Bus_Management_System"
   },
   {
     id: 3,

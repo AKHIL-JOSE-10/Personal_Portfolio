@@ -5,37 +5,31 @@ import project4 from "../assets/projects/project-4.jpg";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I am a versatile developer skilled in both full stack web development and machine learning.  I have expertise in technologies such as React, Express, Nodejs and MongoDB for building efficient and user-friendly web applications. Additionally, I have a strong foundation in Machine Learning, allowing me to apply advanced algorithms and techniques to solve complex problems. My journey in development began with a deep curiosity for how things work, and I continually strive to learn and adapt to new challenges. I thrive in collaborative environments and am passionate about delivering high-quality solutions.`;
 
 export const EXPERIENCES = [
+  {
+    year: "2024 ",
+    role: "Full Stack Developer",
+    company: "JYOTHI",
+    description: `Developed an online food ordering system for our college canteen as a mini project. This system streamlines meal ordering, reduces wait times, and enhances user convenience. It features secure user registration, an interactive menu with detailed food item information. Additionally, an admin panel was created for efficient menu management and order history viewing. This project significantly improved the efficiency and user experience of the canteen services.`,
+    technologies: ["React", "Nodejs", "Express", "MongoDB", "HTML", "CSS"],
+  },
   {
     year: "2023 - Present",
     role: "Full Stack Developer",
     company: "JYOTHI CONSULTANCY SERVICE.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, PHP, Codeignitor Implemented RESTful APIs and integrated with  MYSQL  databases. Collaborated with stakeholders to define project requirements and timelines.`,
+    description: `Created a bus management system for our college buses. This system includes panels for students and staff, bus coordinators, and college administrators, facilitating efficient bus payments and management. This project improved the overall efficiency and user experience of managing college bus services and Collaborated with stakeholders to define project requirements and timelines.`,
     technologies: ["PHP", "Codeignitor","MYSQL"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
+    year: "2023",
     role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    company: "ICT Academy",
+    description: `Designed and developed a travel blog app as part of a project for an internship conducted by ICT Academy. This app enables users to share their travel experiences, upload photos, and write detailed blog posts. The project enhanced my skills in web development and provided practical experience in creating user-friendly and engaging applications.`,
+    technologies: ["React", "Nodejs", "Express", "MongoDB", "HTML", "CSS"],
   },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  },
+  
 ];
 
 export const PROJECTS = [

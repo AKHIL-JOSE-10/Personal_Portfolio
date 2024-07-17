@@ -41,7 +41,7 @@ const sliderVariants = {
 
 const Hero = () => {
   const handleDownloadResume = () => {
-    window.open(ResumePDF); // Opens the PDF in a new tab for download
+    window.open(ResumePDF); 
   };
 
   return (
@@ -58,9 +58,15 @@ const Hero = () => {
             Software Engineer
           </motion.h2>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              See the Latest Works
-            </motion.button>
+            <motion.a 
+              href="https://github.com/AKHIL-JOSE-10?tab=repositories" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <motion.button variants={textVariants}>
+                See the Latest Works
+              </motion.button>
+            </motion.a>
             <motion.button variants={textVariants} onClick={handleDownloadResume}>
               Download Resume
             </motion.button>
@@ -68,7 +74,7 @@ const Hero = () => {
           <motion.img
             variants={textVariants}
             animate="scrollButton"
-            src=""
+            src=''
             alt=""
           />
         </motion.div>
