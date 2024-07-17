@@ -20,7 +20,7 @@ export const EXPERIENCES = [
     role: "Full Stack Developer",
     company: "JYOTHI CONSULTANCY SERVICE.",
     description: `Created a bus management system for our college buses. This system includes panels for students and staff, bus coordinators, and college administrators, facilitating efficient bus payments and management. This project improved the overall efficiency and user experience of managing college bus services and Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["PHP", "Codeignitor","MYSQL"],
+    technologies: ["PHP", "Codeignitor","MYSQL", "HTML", "CSS"],
   },
   {
     year: "2023",
