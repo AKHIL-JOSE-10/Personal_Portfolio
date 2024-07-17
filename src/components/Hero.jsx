@@ -1,5 +1,6 @@
 import "./Hero.scss";
-import Akhil from '../assets/Akhil.jpg'
+import Akhil from '../assets/Akhil.jpg';
+import ResumePDF from '../assets/AKHIL-JOSE(Resume).pdf'; 
 import { motion } from "framer-motion";
 
 const textVariants = {
@@ -39,6 +40,10 @@ const sliderVariants = {
 };
 
 const Hero = () => {
+  const handleDownloadResume = () => {
+    window.open(ResumePDF); // Opens the PDF in a new tab for download
+  };
+
   return (
     <div className="hero">
       <div className="wrapper">
@@ -56,7 +61,9 @@ const Hero = () => {
             <motion.button variants={textVariants}>
               See the Latest Works
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button variants={textVariants} onClick={handleDownloadResume}>
+              Download Resume
+            </motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}
@@ -75,7 +82,7 @@ const Hero = () => {
         Software Engineer
       </motion.div>
       <div className="imageContainer">
-        <img style={{borderRadius:'40px'}} src={Akhil} alt="" />
+        <img style={{ borderRadius: '40px' }} src={Akhil} alt="" />
       </div>
     </div>
   );

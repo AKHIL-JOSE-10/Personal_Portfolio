@@ -1,31 +1,36 @@
 import { useRef } from "react";
 import "./Portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import bus from '../../assets/bus.jpg'
 
 const items = [
   {
     id: 1,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Online Food Ordering System",
+    img: "https://www.restroapp.com/blog/wp-content/uploads/2020/03/online-food-ordering-statistics-RestroApp.jpg",
+    desc: "Developed an Online Food Ordering System for the college canteen as a mini project to streamline meal ordering and reduce wait times. The system features secure user registration, an interactive menu with detailed food item information, and real-time order tracking. Additionally, created an admin panel for efficient menu management, order history viewing.  This project significantly improved the efficiency and user experience of the canteen services.",
+    link: "https://github.com/AKHIL-JOSE-10/Online-_Food_website",
   },
   {
     id: 2,
-    title: "Next.js Blog",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Jyothi Bus MAnagement System",
+    img: bus,
+    desc: "Worked collaboratively to develop a Bus Management System for our college, enhancing transportation logistics and efficiency. The system comprises three panels: one for students and staff to view bus info ,booking and make payments, another for bus coordinators to manage real-time bus tracking and logistics, and a third for college administrators to oversee operations and maintenance. This project significantly improved the efficiency of our college's transportation services.",
+    link: ""
   },
   {
     id: 3,
-    title: "Vanilla JS App",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "EMIT Web App",
+    img: "https://www.earthdata.nasa.gov/s3fs-public/2023-05/emit_iss_dust_graphic_art.png?VersionId=gdBCBAyV0U69IOdEPDTD64cBflQe7i1h",
+    desc: " Participated in NASA's Hackathon and led the development of EMIT, a web app facilitating real-time Earth condition updates sourced from NASA's official data. EMIT empowers scientists to publish and access critical environmental data, fostering global collaboration and advancing Earth sciences.",
+    link: "https://github.com/AKHIL-JOSE-10/EMIT_for_the_future"
   },
   {
     id: 4,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Travel Blog Web App",
+    img: "https://i.pinimg.com/736x/f7/f7/92/f7f79214754fd978fb267cdcb9e87b41.jpg",
+    desc: "Created a travel blog app during an internship organized by ICT Academy at our college. This app serves as a platform for travelers to share their experiences, discover new destinations, and connect with fellow enthusiasts. It showcases a user-friendly interface for posting articles, sharing photos, and interacting with a community passionate about travel exploration. This project highlights my dedication to practical learning and passion for developing engaging digital experiences.",
+    link: "https://github.com/AKHIL-JOSE-10/ictProject"
   },
 ];
 
@@ -48,7 +53,9 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
+              <button>Source Code</button>
+            </a>
           </motion.div>
         </div>
       </div>

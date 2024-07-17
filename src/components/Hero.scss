@@ -9,6 +9,19 @@
     height: 100%;
     margin: auto;
 
+    .buttons {
+        
+      button {
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: transparent;
+        color: white;
+        margin-right: 20px;
+        cursor: pointer !important;
+        font-weight: 300;
+      }
+    }
     .textContainer {
       width: 50%;
       height: 100%;
@@ -39,19 +52,7 @@
         }
       }
 
-      .buttons {
-        
-        button {
-          padding: 20px;
-          border: 1px solid white;
-          border-radius: 10px;
-          background-color: transparent;
-          color: white;
-          margin-right: 20px;
-          cursor: pointer;
-          font-weight: 300;
-        }
-      }
+      
 
       img {
         width: 50px;
