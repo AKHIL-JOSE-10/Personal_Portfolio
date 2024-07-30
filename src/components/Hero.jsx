@@ -1,6 +1,6 @@
 import "./Hero.scss";
 import Akhil from '../assets/Akhil.jpg';
-import ResumePDF from '../assets/AKHIL-JOSE(Resume).pdf'; 
+import ResumePDF from '../assets/Akhil-Jose (Resume).pdf'; 
 import { motion } from "framer-motion";
 
 const textVariants = {
